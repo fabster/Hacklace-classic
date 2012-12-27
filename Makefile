@@ -41,7 +41,9 @@ flasheeprom:
 flash:
 	$(FLASHCMD)
 
-flashall: flash flasheeprom
+flashall:
+	$(FLASHCMD)
+	$(FLASHEEPROMCMD)
 
 lst:  $(PRG).lst
 
