@@ -130,7 +130,7 @@ LOAD c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoo
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xfbc
+.text           0x00000000      0xfba
  *(.vectors)
  .vectors       0x00000000       0x2a c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25/crttn4313.o
                 0x00000000                __vector_default
@@ -247,7 +247,7 @@ LOAD c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoo
                 0x00000a34                dmDisplayImage
                 0x00000a5a                dmPrintByte
                 0x00000a74                dmPrintChar
- .text          0x00000afc      0x438 Hacklace.o
+ .text          0x00000afc      0x436 Hacklace.o
                 0x00000afc                InitHardware
                 0x00000b3e                SetMode
                 0x00000b7a                DisplayMessage
@@ -256,30 +256,30 @@ LOAD c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoo
                 0x00000cf2                __vector_14
                 0x00000d9c                __vector_20
                 0x00000db0                __vector_7
- .text          0x00000f34        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .text          0x00000f34        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .text          0x00000f34        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
- .text          0x00000f34        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
- .text          0x00000f34        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
-                0x00000f34                . = ALIGN (0x2)
+ .text          0x00000f32        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .text          0x00000f32        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .text          0x00000f32        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+ .text          0x00000f32        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
+ .text          0x00000f32        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
+                0x00000f32                . = ALIGN (0x2)
  *(.text.*)
- .text.startup  0x00000f34       0x58 Hacklace.o
-                0x00000f34                main
- .text.libgcc   0x00000f8c        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .text.libgcc   0x00000f8c        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .text.libgcc   0x00000f8c        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+ .text.startup  0x00000f32       0x58 Hacklace.o
+                0x00000f32                main
+ .text.libgcc   0x00000f8a        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc   0x00000f8a        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000f8a        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
  .text.avr-libc
-                0x00000f8c       0x10 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
-                0x00000f8c                __eerd_byte_tn4313
+                0x00000f8a       0x10 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
+                0x00000f8a                __eerd_byte_tn4313
  .text.avr-libc
-                0x00000f9c       0x1c c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
-                0x00000f9c                __eewr_byte_tn4313
-                0x00000f9e                __eewr_r18_tn4313
-                0x00000fb8                . = ALIGN (0x2)
+                0x00000f9a       0x1c c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
+                0x00000f9a                __eewr_byte_tn4313
+                0x00000f9c                __eewr_r18_tn4313
+                0x00000fb6                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000fb8        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
-                0x00000fb8                _exit
-                0x00000fb8                exit
+ .fini9         0x00000fb6        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+                0x00000fb6                _exit
+                0x00000fb6                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -298,11 +298,11 @@ LOAD c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoo
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000fb8        0x4 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .fini0         0x00000fb6        0x4 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000fbc                _etext = .
+                0x00000fba                _etext = .
 
-.data           0x00800060        0x6 load address 0x00000fbc
+.data           0x00800060        0x6 load address 0x00000fba
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25/crttn4313.o
@@ -343,8 +343,8 @@ LOAD c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoo
  COMMON         0x00800137        0x2 Hacklace.o
                 0x00800137                msg_ptr
                 0x00800139                PROVIDE (__bss_end, .)
-                0x00000fbc                __data_load_start = LOADADDR (.data)
-                0x00000fc2                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000fba                __data_load_start = LOADADDR (.data)
+                0x00000fc0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800139        0x0
                 0x00800139                PROVIDE (__noinit_start, .)
@@ -465,10 +465,10 @@ LOAD c:/programme/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoo
  .debug_str     0x000001b1      0x1ef Hacklace.o
                                 0x2be (size before relaxing)
 
-.debug_loc      0x00000000      0xa1c
+.debug_loc      0x00000000      0xa06
  *(.debug_loc)
  .debug_loc     0x00000000      0x434 dot_matrix.o
- .debug_loc     0x00000434      0x5e8 Hacklace.o
+ .debug_loc     0x00000434      0x5d2 Hacklace.o
 
 .debug_macinfo
  *(.debug_macinfo)

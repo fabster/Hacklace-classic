@@ -355,7 +355,6 @@ ISR(USART0_RX_vect)
 	ch = UDR;							// read received character
 	if (ch == 27) { state = RESET; }	// <ESC> resets the state machine
 	if (state >= EE_NORMAL) {
-//	if (state >= IDLE) {
 		dmClearDisplay();
 		dmPrintChar(ch);
 	}	
@@ -366,9 +365,9 @@ ISR(USART0_RX_vect)
 			else					{ state = IDLE; }
 			break;
 		case AUTH:
-			if (ch == EE_AUTH2_CHAR)	{ state = EE_NORMAL; }
+			if (ch == EE_AUTH2_CHAR)		{ state = EE_NORMAL; }
 			else if (ch == DISP_AUTH2_CHAR)	{ state = DISP_SET_MODE; }
-			else					{ state = IDLE; }
+			else							{ state = IDLE; }
 			break;
 		case RESET:
 			msg_ptr = (uint8_t*) messages;
@@ -384,7 +383,7 @@ ISR(USART0_RX_vect)
 			break;
 		case DISP_CHAR:
 			if ((ch == 13) || (ch == 10)) {	dmClearDisplay(); }		// chr(13) = <CR>, chr(10) = <LF>
-			else { dmPrintChar(ch); dmPrintByte(0); }
+			else { dmPrintChar(ch); dmPrintByte(0); }				// print character followed by empty column
 			break;
 		case EE_NORMAL:
 			if (ch == '^') { state = EE_SPECIAL_CHAR; }
@@ -401,8 +400,8 @@ ISR(USART0_RX_vect)
 			state = EE_NORMAL;
 			break;
 		case EE_HEX_CODE:
-			ch -= '0';
-			if (ch >= 17) { ch -= 7; }
+			if (ch >= 'A') { ch -= ('A' - '9' - 1); }
+			ch -= '0';								// map characters '0'..'9' and 'A'..'F' to values 0..15
 			if (ch > 15) {							// any character below '0' or above 'F' terminates hex input
 				eeprom_write_byte(ee_write_ptr++, val);
 				state = EE_NORMAL;
