@@ -148,11 +148,9 @@ inline void dmSetOutputs(uint8_t col, uint8_t pattern)
 ======================================================================*/
 void dmDisplay(void)
 {
+	display.curr_col++;
 	if (display.curr_col >= DISP_COLUMNS) {
 		display.curr_col = 0;
-	}
-	else {
-		display.curr_col++;
 	}
 	dmSetOutputs(display.curr_col, display.memory[display.base + display.curr_col]);
 }
