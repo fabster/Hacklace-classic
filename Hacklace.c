@@ -57,8 +57,8 @@ FUSES =
 
 uint8_t scroll_speed = 8;					// scrolling speed (0 = fastest)
 volatile uint8_t button = PB_ACK;			// button event
-//uint8_t* msg_ptr = (uint8_t*) messages;		// pointer to next message in EEPROM
-uint8_t* msg_ptr;							// pointer to next message in EEPROM
+uint8_t* msg_ptr = (uint8_t*) messages;		// pointer to next message in EEPROM
+//uint8_t* msg_ptr;							// pointer to next message in EEPROM
 uint8_t* ee_write_ptr = (uint8_t*) messages;
 
 
@@ -71,9 +71,10 @@ uint8_t* ee_write_ptr = (uint8_t*) messages;
 #define RESET			2
 #define DISP_SET_MODE	3
 #define DISP_CHAR		4
-#define EE_NORMAL		5
-#define EE_SPECIAL_CHAR	6
-#define EE_HEX_CODE		7
+#define EE_NORMAL		5		// receive "normal" character
+#define EE_NORMAL_CRLF	6
+#define EE_SPECIAL_CHAR	7
+#define EE_HEX_CODE		8
 
 #define AUTH1_CHAR		'H'
 #define EE_AUTH2_CHAR	'L'		// authentication for entering EEPROM mode
@@ -361,6 +362,7 @@ ISR(USART0_RX_vect)
 	}	
 
 	switch (state) {
+		// cases for initialization sequence
 		case IDLE:
 			if (ch == AUTH1_CHAR)	{ state = AUTH; }
 			else					{ state = IDLE; }
@@ -377,6 +379,8 @@ ISR(USART0_RX_vect)
 			dmPrintChar(129);						// show logo
 			state = IDLE;
 			break;
+			
+		// cases for serial display mode
 		case DISP_SET_MODE:
 			dmClearDisplay();
 			SetMode(ch);
@@ -386,14 +390,20 @@ ISR(USART0_RX_vect)
 			if ((ch == 13) || (ch == 10)) {	dmClearDisplay(); }		// chr(13) = <CR>, chr(10) = <LF>
 			else { dmPrintChar(ch); dmPrintByte(0); }				// print character followed by empty column
 			break;
+			
+		// cases for writing to EEPROM
 		case EE_NORMAL:
+			if ((ch == 13) || (ch == 10)) {			// chr(13) = <CR>, chr(10) = <LF>
+				eeprom_write_byte(ee_write_ptr++, 0);
+				state = EE_NORMAL_CRLF;
+			}
+			// no break -> fall through to next case
+		case EE_NORMAL_CRLF:						// normal case after reception of first <CR> or <LF>
 			if (ch == '^') { state = EE_SPECIAL_CHAR; }
 			else if (ch == '$') { val = 0;  state = EE_HEX_CODE; }
-			else if ((ch == 13) || (ch == 10)) {	// chr(13) = <CR>, chr(10) = <LF>
-				eeprom_write_byte(ee_write_ptr++, 0);
-			}
 			else if (ch >= ' ') {					// ignore non-printing characters
 				eeprom_write_byte(ee_write_ptr++, ch);
+				state = EE_NORMAL;
 			}
 			break;
 		case EE_SPECIAL_CHAR:
