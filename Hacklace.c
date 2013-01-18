@@ -151,12 +151,12 @@ void SetMode(uint8_t mode)
 {
 	uint8_t inc, dir, dly, spd;
 
-	if (mode & 0x08)	{ inc = 5; }
-		else			{ inc = 1; }
-	if (mode & 0x80)	{ dir = BIDIRECTIONAL; }
-		else			{ dir = FORWARD; }
-	spd = mode & 0x07;
-	dly = swap(mode) & 0x07;
+	if (mode & MODE_FRAME)	{ inc = 5; }
+		else				{ inc = 1; }
+	if (mode & MODE_BIDIR)	{ dir = BIDIRECTIONAL; }
+		else				{ dir = FORWARD; }
+	spd = mode & MODE_SPEED;
+	dly = swap(mode & MODE_DELAY);
 	dmSetScrolling(inc, dir, pgm_read_byte(&dly_conv[dly]));
 	scroll_speed = pgm_read_byte(&spd_conv[spd]);
 }		
@@ -185,9 +185,10 @@ void SetMode(uint8_t mode)
 ======================================================================*/
 uint8_t* DisplayMessage(uint8_t* ee_adr)
 {
-	uint8_t ch;
+	uint8_t ch, m;
 
-	SetMode(eeprom_read_byte(ee_adr));
+	m = eeprom_read_byte(ee_adr);
+	SetMode(m);
 	ee_adr++;
 	dmClearDisplay();
 
@@ -200,6 +201,9 @@ uint8_t* DisplayMessage(uint8_t* ee_adr)
 				if (ch < ANIMATION_COUNT) {
 					dmDisplayImage((const uint8_t*)pgm_read_word(&animation[ch]));
 				}				
+			}
+			else {
+				dmPrintChar('~');
 			}
 		}
 		else if (ch == 0xFF) {				// direct mode
@@ -219,7 +223,9 @@ uint8_t* DisplayMessage(uint8_t* ee_adr)
 			dmPrintChar(ch);
 		}
 		ch = eeprom_read_byte(ee_adr++);
-		if (ch) { dmPrintByte(0); }			// print a narrow space except for the last character					
+		if (!(m & MODE_FRAME)) {			// for scrolling texts
+			if (ch) { dmPrintByte(0); }		// print a narrow space between characters, except for the last one
+		}
 	}
 	ch = eeprom_read_byte(ee_adr);			// read mode byte of next message
 	if (ch)		{ return(ee_adr); }
@@ -407,13 +413,16 @@ ISR(USART0_RX_vect)
 			}
 			break;
 		case EE_SPECIAL_CHAR:
-			eeprom_write_byte(ee_write_ptr++, ch+63);
+			if (ch == '^')	{ eeprom_write_byte(ee_write_ptr++, '^'); }
+			else			{ ch += 63; }
+			eeprom_write_byte(ee_write_ptr++, ch);
 			state = EE_NORMAL;
 			break;
 		case EE_HEX_CODE:
+			if (ch == '$')	{ val = '$'; ch = ' '; }
 			if (ch >= 'A') { ch -= ('A' - '9' - 1); }
-			ch -= '0';								// map characters '0'..'9' and 'A'..'F' to values 0..15
-			if (ch > 15) {							// any character below '0' or above 'F' terminates hex input
+			ch -= '0';							// map characters '0'..'9' and 'A'..'F' to values 0..15
+			if (ch > 15) {						// any character below '0' or above 'F' terminates hex input
 				eeprom_write_byte(ee_write_ptr++, val);
 				state = EE_NORMAL;
 			}
@@ -423,13 +432,3 @@ ISR(USART0_RX_vect)
 }
 
 
-/*
-ISR(TIMER1_COMPA_vect)
-{
-}
-
-
-ISR(TIMER1_COMPB_vect)
-{
-}
-*/

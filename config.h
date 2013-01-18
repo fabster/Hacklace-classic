@@ -61,12 +61,18 @@ Disclaimer:			This software is provided by the copyright holder "as is" and any
 #define PB_LONGPRESS		(PB_PRESS|PB_LONG)
 #define PB_MASK				(1<<PB_BIT)				// mask to extract button state
 
+// bit masks for scrolling mode (do not change)
+#define MODE_BIDIR			0x80		// bidirectional scrolling
+#define MODE_FRAME			0x08		// frame-by-frame scrolling (inc = +5)
+#define MODE_DELAY			0x70		// delay between two scrolling cycles
+#define MODE_SPEED			0x07		// scrolling speed
+
 // messages in EEPROM
 #define MSG_SIZE	256			// number of EEPROM bytes reserved for messages
 
 // default message data
 // A message is either a text or an animation to be displayed on the dot matrix.
-// Note: Between each two characters of a string there will be a space of 1 column.
+// Note: In text-mode (inc = 1) a space of 1 column is inserted between each two characters.
 //		0x20 = normal space (3+1 columns)
 //		0x7F = short space (0+1 column)
 //		0x9D = long space (5+1 columns), may be used as the last frame of an animation
@@ -77,7 +83,7 @@ const uint8_t messages[MSG_SIZE] EEMEM = {
 	0x65, ' ', 'I', ' ', '^', 'R', ' ', 'R', 'a', 'u', 'm', 'Z', 'e', 'i', 't', 'L', 'a', 'b', 'o', 'r', 0x9D, 0x00,
 	0xC4, 0x8B, ' ', 0x8C, ' ', 0x8E, ' ', 0x8D, 0x00,							// Monster
 	0x44, ' ', '^', 'm', ' ', '+', ' ', '^', 'n', ' ', '=', ' ', '^', 'R', 0x00,
-	0x0B, 0xA3, ' ', 0xA5, ' ', 0xA6, ' ', 0xA0, ' ', 0x00,						// break-dance
+	0x0B, 0xA3, 0x9D, 0xA5, 0x9D, 0xA6, 0x9D, 0xA0, 0x9D, 0x00,					// break-dance
 	0x04, ' ', '^', 'S', '^', 'S', '^', 'S', 0x9D, 0x00,						// turn left
 	0x04, ' ', 0x94, 0x95, 0x95, ' ',  0x94, ' ', 0x95, 0x7F, 0x94, 0x9D, 0x00,	// music
 	0x95, ' ', '|', ' ', 0x00,			// scan
@@ -90,15 +96,15 @@ const uint8_t messages[MSG_SIZE] EEMEM = {
 	0x5A, '~', 'G', 0x00,				// wink
 	0x34, '~', 'H', 0x00,				// ecg
 	0x0E, '~', 'I', 0x00,				// crazy checkers
-	0x4A, 0x91, ' ', 0x91, 0x9D, 0x00,	// heartbeat
+	0x4A, 0x91, 0x9D, 0x91, 0x9D, 0x00,	// heartbeat
 	0x49, '~', 'J', 0x00,				// tetris
 	0x5B, '~', 'K', 0x00,				// glider
 	0x8B, '~', 'L', 0x9D, 0x00,			// hop
 	0x6B, '~', 'M', 0x00,				// pong
-	0x38, ' ', 0x9D, '~', 'N', 0x00,	// house
+	0x38, 0x9D, 0x9D, '~', 'N', 0x00,	// house
 	0x6B, '~', 'O', 0x9D, 0x00,			// rocket
 	0x64, 0x9D, '~', 'P', 0x9D, 0x00,	// train
-	0x5B, '3', '3', 0x7F, ' ', '2', '2', 0x7F, ' ', 0x7F, '1', 0x7F, '1', '~', 'Q', 0x9D, 0x00,	// explode
+	0x5B, '~', 'Q', 0x9D, 0x00,			// explode
 	0x6C, '~', 'R', 0x00,				// droplet
 	0x0E, '~', 'S', 0x00,				// psycho
 	0x7D, '~', 'T', 0x9D, 0x00,			// TV off
