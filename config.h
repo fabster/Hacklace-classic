@@ -70,6 +70,11 @@ Disclaimer:			This software is provided by the copyright holder "as is" and any
 // messages in EEPROM
 #define MSG_SIZE	256			// number of EEPROM bytes reserved for messages
 
+// character font
+// Uncomment the following line if you want the zero character to display with a diagonal line
+// which makes it better distinguishable from the letter "O"
+//#define ZERO_WITH_SLASH
+
 // default message data
 // A message is either a text or an animation to be displayed on the dot matrix.
 // Note: In text-mode (inc = 1) a space of 1 column is inserted between each two characters.
