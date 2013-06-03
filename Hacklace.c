@@ -71,10 +71,11 @@ uint8_t* ee_write_ptr = (uint8_t*) messages;
 #define RESET			2
 #define DISP_SET_MODE	3
 #define DISP_CHAR		4
-#define EE_NORMAL		5		// receive "normal" character
-#define EE_NORMAL_CRLF	6
-#define EE_SPECIAL_CHAR	7
-#define EE_HEX_CODE		8
+#define DISP_RAW		5
+#define EE_NORMAL		6		// receive "normal" character
+#define EE_NORMAL_CRLF	7
+#define EE_SPECIAL_CHAR	8
+#define EE_HEX_CODE		9
 
 #define AUTH1_CHAR		'H'
 #define EE_AUTH2_CHAR	'L'		// authentication for entering EEPROM mode
@@ -394,8 +395,17 @@ ISR(USART0_RX_vect)
 			break;
 		case DISP_CHAR:
 			if ((ch == 13) || (ch == 10)) {	dmClearDisplay(); }		// chr(13) = <CR>, chr(10) = <LF>
+			#ifdef ENABLE_RAW_DISP_MODE
+				if (ch == 0xFF) { state = DISP_RAW; }				// chr($FF) enters "raw mode"
+			#endif	
 			else { dmPrintChar(ch); dmPrintByte(0); }				// print character followed by empty column
 			break;
+	#ifdef ENABLE_RAW_DISP_MODE
+		case DISP_RAW:
+			if (ch == 0xFF) { state = DISP_CHAR; break; }			// chr($FF) leaves "raw mode"
+			dmPrintByte(ch);										// write received byte directly to display buffer
+			break;
+	#endif
 			
 		// cases for writing to EEPROM
 		case EE_NORMAL:

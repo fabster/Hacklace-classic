@@ -47,6 +47,9 @@ Disclaimer:			This software is provided by the copyright holder "as is" and any
 // serial interface
 #define SER_CLK_CORRECTION	1.000		// factor to correct the serial baud rate
 
+// raw display mode
+#define ENABLE_RAW_DISP_MODE
+
 // push button
 #define PB_PORT				PORTD
 #define PB_PIN				PIND
@@ -83,8 +86,7 @@ Disclaimer:			This software is provided by the copyright holder "as is" and any
 //		0x9D = long space (5+1 columns), may be used as the last frame of an animation
 const uint8_t messages[MSG_SIZE] EEMEM = {
 	0x54, 'H', 'a', 'c', 'k', 'l', 'a', 'c', 'e', ' ', '^', 'P', 0x00, 
-	0x44, ' ', 'n', 'u', 'r', ' ', '1', '0', '^', 'A', 0x9D, 0x00,
-	0x64, ' ', 'K', 'a', 'u', 'f', ' ', 'm', 'i', 'c', 'h', 0x7F, '!', '!', '!', 0x9D, 0x00,
+	0x54, ' ', 'L', 'ö', 't', 's', 'p', 'a', 'ß', ' ', 'f', 'ü', 'r', ' ', 'a', 'l', 'l', 'e', '!', 0x9D, 0x00,
 	0x65, ' ', 'I', ' ', '^', 'R', ' ', 'R', 'a', 'u', 'm', 'Z', 'e', 'i', 't', 'L', 'a', 'b', 'o', 'r', 0x9D, 0x00,
 	0xC4, 0x8B, ' ', 0x8C, ' ', 0x8E, ' ', 0x8D, 0x00,							// Monster
 	0x44, ' ', '^', 'm', ' ', '+', ' ', '^', 'n', ' ', '=', ' ', '^', 'R', 0x00,
