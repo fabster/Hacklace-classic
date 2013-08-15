@@ -44,9 +44,6 @@ Disclaimer:			This software is provided by the copyright holder "as is" and any
 #define OCR0A_CYCLE_TIME	(uint8_t)(F_CPU / 1024.0 / COLUMN_FREQ + 0.5);
 #define OCR0B_CYCLE_TIME	(uint8_t)(F_CPU / 1024.0 / SYS_TIMER_FREQ + 0.5);
 
-// serial interface
-#define SER_CLK_CORRECTION	1.000		// factor to correct the serial baud rate
-
 // raw display mode
 #define ENABLE_RAW_DISP_MODE
 
@@ -116,7 +113,6 @@ const uint8_t messages[MSG_SIZE] EEMEM = {
 	0x0E, '~', 'S', 0x00,				// psycho
 	0x7D, '~', 'T', 0x9D, 0x00,			// TV off
 	0x0D, '~', 'U', 0x00,				// clock
-	0x94, '~', 'V', 0x00,				// lady
 	0x00
 };
 

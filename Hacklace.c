@@ -35,6 +35,7 @@ Disclaimer:			This software is provided by the copyright holder "as is" and any
 #include <avr/sleep.h>
 #include <util/delay.h>
 #include "config.h"
+#include "calibration-data.h"
 #include "dot_matrix.h"
 #include "animations.h"
 
@@ -107,6 +108,11 @@ uint8_t* ee_write_ptr = (uint8_t*) messages;
 ======================================================================*/
 void InitHardware(void)
 {
+	// calibrate main oscillator
+#ifdef EXT_OSCCAL
+	OSCCAL = EXT_OSCCAL;
+#endif
+	
 	// switch all pins that are connected to the dot matrix to output
 	DDRA = DISP_MASK_A;
 	DDRB = DISP_MASK_B;
@@ -128,9 +134,11 @@ void InitHardware(void)
 	// Note: Speed of the serial interface must not be higher than 2400 Baud.
 	// This leaves enough time for the EEPROM write operation to complete before 
 	// the next byte arrives.
-	UBRRL = (uint8_t) (103.5 * SER_CLK_CORRECTION);	// 2400 baud, corrected value
-//	UBRRL = 103;						// 2400 baud, ideal value
-//	UBRRL = 207;						// 1200 baud, ideal value
+#ifdef T_MEASURED
+	UBRRL = (uint8_t) (103.5 * (5.0 / T_MEASURED));	// 2400 baud, calibrated value
+#else
+	UBRRL = 103;						// 2400 baud, ideal value
+#endif
 	UBRRH = 0;
 	UCSRB = (1<<RXCIE)|(1<<RXEN);		// enable receiver, enable RX interrupt
 	UCSRC = (3<<UCSZ0);					// async USART, 8 data bits, no parity, 1 stop bit

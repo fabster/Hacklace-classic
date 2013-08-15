@@ -1,14 +1,14 @@
 Archive member included because of file (symbol)
 
-c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
-                              c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o (exit)
-c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+                              c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o (exit)
+c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
                               Hacklace.o (__do_copy_data)
-c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
                               dot_matrix.o (__do_clear_bss)
-c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
+c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
                               Hacklace.o (__eerd_byte_tn4313)
-c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
+c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
                               Hacklace.o (__eewr_byte_tn4313)
 
 Allocating common symbols
@@ -18,54 +18,54 @@ display             0xce              dot_matrix.o
 
 Discarded input sections
 
- .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+ .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
  .text          0x00000000        0x0 dot_matrix.o
  .bss           0x00000000        0x0 dot_matrix.o
  .text          0x00000000        0x0 Hacklace.o
  .bss           0x00000000        0x0 Hacklace.o
- .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
- .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
- .text.libgcc   0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
- .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
- .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
- .text.libgcc   0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
- .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
- .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
- .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
- .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
- .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
- .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
+                0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
+ .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
+ .text          0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
+ .bss           0x00000000        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
 
 Memory Configuration
 
@@ -81,15 +81,15 @@ user_signatures  0x00850000         0x00000400         rw !x
 
 Linker script and memory map
 
-LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
 LOAD dot_matrix.o
 LOAD Hacklace.o
 START GROUP
-LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libm.a
+LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libm.a
 END GROUP
-LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a
-LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a
-LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a
+LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a
+LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a
+LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a
 
 .hash
  *(.hash)
@@ -181,9 +181,9 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xff4
+.text           0x00000000      0xfbe
  *(.vectors)
- .vectors       0x00000000       0x2a c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+ .vectors       0x00000000       0x2a c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
@@ -207,115 +207,111 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
                 0x00000056      0x2d0 dot_matrix.o
                 0x00000056                font
  .progmem.data.animation
-                0x00000326       0x2c Hacklace.o
+                0x00000326       0x2a Hacklace.o
                 0x00000326                animation
- .progmem.data.lady
-                0x00000352       0x1f Hacklace.o
-                0x00000352                lady
  .progmem.data.clock
-                0x00000371       0x29 Hacklace.o
-                0x00000371                clock
+                0x00000350       0x29 Hacklace.o
+                0x00000350                clock
  .progmem.data.tv_off
-                0x0000039a       0x1f Hacklace.o
-                0x0000039a                tv_off
+                0x00000379       0x1f Hacklace.o
+                0x00000379                tv_off
  .progmem.data.psycho
-                0x000003b9       0x1f Hacklace.o
-                0x000003b9                psycho
+                0x00000398       0x1f Hacklace.o
+                0x00000398                psycho
  .progmem.data.droplet
-                0x000003d8       0x33 Hacklace.o
-                0x000003d8                droplet
+                0x000003b7       0x33 Hacklace.o
+                0x000003b7                droplet
  .progmem.data.explode
-                0x0000040b       0x65 Hacklace.o
-                0x0000040b                explode
+                0x000003ea       0x65 Hacklace.o
+                0x000003ea                explode
  .progmem.data.train
-                0x00000470       0x3d Hacklace.o
-                0x00000470                train
+                0x0000044f       0x3d Hacklace.o
+                0x0000044f                train
  .progmem.data.rocket
-                0x000004ad       0x51 Hacklace.o
-                0x000004ad                rocket
+                0x0000048c       0x51 Hacklace.o
+                0x0000048c                rocket
  .progmem.data.house
-                0x000004fe       0x29 Hacklace.o
-                0x000004fe                house
+                0x000004dd       0x29 Hacklace.o
+                0x000004dd                house
  .progmem.data.pong
-                0x00000527       0x65 Hacklace.o
-                0x00000527                pong
+                0x00000506       0x65 Hacklace.o
+                0x00000506                pong
  .progmem.data.hop
-                0x0000058c       0x1a Hacklace.o
-                0x0000058c                hop
+                0x0000056b       0x1a Hacklace.o
+                0x0000056b                hop
  .progmem.data.glider
-                0x000005a6       0x60 Hacklace.o
-                0x000005a6                glider
+                0x00000585       0x60 Hacklace.o
+                0x00000585                glider
  .progmem.data.tetris
-                0x00000606       0xab Hacklace.o
-                0x00000606                tetris
+                0x000005e5       0xab Hacklace.o
+                0x000005e5                tetris
  .progmem.data.checkers
-                0x000006b1        0xb Hacklace.o
-                0x000006b1                checkers
+                0x00000690        0xb Hacklace.o
+                0x00000690                checkers
  .progmem.data.ecg
-                0x000006bc       0x15 Hacklace.o
-                0x000006bc                ecg
+                0x0000069b       0x15 Hacklace.o
+                0x0000069b                ecg
  .progmem.data.wink
-                0x000006d1       0x24 Hacklace.o
-                0x000006d1                wink
+                0x000006b0       0x24 Hacklace.o
+                0x000006b0                wink
  .progmem.data.tunnel
-                0x000006f5       0x10 Hacklace.o
-                0x000006f5                tunnel
+                0x000006d4       0x10 Hacklace.o
+                0x000006d4                tunnel
  .progmem.data.snow
-                0x00000705       0x5b Hacklace.o
-                0x00000705                snow
+                0x000006e4       0x5b Hacklace.o
+                0x000006e4                snow
  .progmem.data.mountainrange
-                0x00000760       0x12 Hacklace.o
-                0x00000760                mountainrange
+                0x0000073f       0x12 Hacklace.o
+                0x0000073f                mountainrange
  .progmem.data.bounce
-                0x00000772       0x29 Hacklace.o
-                0x00000772                bounce
+                0x00000751       0x29 Hacklace.o
+                0x00000751                bounce
  .progmem.data.fire
-                0x0000079b       0x65 Hacklace.o
-                0x0000079b                fire
+                0x0000077a       0x65 Hacklace.o
+                0x0000077a                fire
  .progmem.data.arrow
-                0x00000800       0x51 Hacklace.o
-                0x00000800                arrow
+                0x000007df       0x51 Hacklace.o
+                0x000007df                arrow
  .progmem.data.spd_conv
-                0x00000851        0x8 Hacklace.o
-                0x00000851                spd_conv
+                0x00000830        0x8 Hacklace.o
+                0x00000830                spd_conv
  .progmem.data.dly_conv
-                0x00000859        0x8 Hacklace.o
-                0x00000859                dly_conv
-                0x00000862                . = ALIGN (0x2)
- *fill*         0x00000861        0x1 
-                0x00000862                __trampolines_start = .
+                0x00000838        0x8 Hacklace.o
+                0x00000838                dly_conv
+                0x00000840                . = ALIGN (0x2)
+                0x00000840                __trampolines_start = .
  *(.trampolines)
- .trampolines   0x00000862        0x0 linker stubs
+ .trampolines   0x00000840        0x0 linker stubs
  *(.trampolines*)
-                0x00000862                __trampolines_end = .
+                0x00000840                __trampolines_end = .
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x00000862                __ctors_start = .
+                0x00000840                __ctors_start = .
  *(.ctors)
-                0x00000862                __ctors_end = .
-                0x00000862                __dtors_start = .
+                0x00000840                __ctors_end = .
+                0x00000840                __dtors_start = .
  *(.dtors)
-                0x00000862                __dtors_end = .
+                0x00000840                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000862        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
-                0x00000862                __init
+ .init0         0x00000840        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+                0x00000840                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000862        0xc c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+ .init2         0x00000840        0xc c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x0000086e       0x16 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
-                0x0000086e                __do_copy_data
- .init4         0x00000884       0x10 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
-                0x00000884                __do_clear_bss
+ .init4         0x0000084c       0x16 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+                0x0000084c                __do_copy_data
+ .init4         0x00000862       0x10 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+                0x00000862                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -326,90 +322,90 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000894        0x4 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+ .init9         0x00000872        0x4 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
  *(.init9)
  *(.text)
- .text          0x00000898        0x2 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
-                0x00000898                __vector_1
-                0x00000898                __vector_12
-                0x00000898                __bad_interrupt
-                0x00000898                __vector_6
-                0x00000898                __vector_3
-                0x00000898                __vector_11
-                0x00000898                __vector_17
-                0x00000898                __vector_19
-                0x00000898                __vector_5
-                0x00000898                __vector_4
-                0x00000898                __vector_9
-                0x00000898                __vector_2
-                0x00000898                __vector_15
-                0x00000898                __vector_8
-                0x00000898                __vector_10
-                0x00000898                __vector_16
-                0x00000898                __vector_18
-                0x0000089a                . = ALIGN (0x2)
+ .text          0x00000876        0x2 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+                0x00000876                __vector_1
+                0x00000876                __vector_12
+                0x00000876                __bad_interrupt
+                0x00000876                __vector_6
+                0x00000876                __vector_3
+                0x00000876                __vector_11
+                0x00000876                __vector_17
+                0x00000876                __vector_19
+                0x00000876                __vector_5
+                0x00000876                __vector_4
+                0x00000876                __vector_9
+                0x00000876                __vector_2
+                0x00000876                __vector_15
+                0x00000876                __vector_8
+                0x00000876                __vector_10
+                0x00000876                __vector_16
+                0x00000876                __vector_18
+                0x00000878                . = ALIGN (0x2)
  *(.text.*)
  .text.dmDisplay
-                0x0000089a       0xde dot_matrix.o
-                0x0000089a                dmDisplay
+                0x00000878       0xca dot_matrix.o
+                0x00000878                dmDisplay
  .text.dmScroll
-                0x00000978       0x70 dot_matrix.o
-                0x00000978                dmScroll
+                0x00000942       0x70 dot_matrix.o
+                0x00000942                dmScroll
  .text.dmSetScrolling
-                0x000009e8       0x20 dot_matrix.o
-                0x000009e8                dmSetScrolling
+                0x000009b2       0x20 dot_matrix.o
+                0x000009b2                dmSetScrolling
  .text.dmClearDisplay
-                0x00000a08       0x1e dot_matrix.o
-                0x00000a08                dmClearDisplay
- .text.dmInit   0x00000a26        0xc dot_matrix.o
-                0x00000a26                dmInit
+                0x000009d2       0x1e dot_matrix.o
+                0x000009d2                dmClearDisplay
+ .text.dmInit   0x000009f0        0xc dot_matrix.o
+                0x000009f0                dmInit
  .text.dmDisplayImage
-                0x00000a32       0x28 dot_matrix.o
-                0x00000a32                dmDisplayImage
+                0x000009fc       0x28 dot_matrix.o
+                0x000009fc                dmDisplayImage
  .text.dmPrintByte
-                0x00000a5a       0x1a dot_matrix.o
-                0x00000a5a                dmPrintByte
+                0x00000a24       0x1a dot_matrix.o
+                0x00000a24                dmPrintByte
  .text.dmPrintChar
-                0x00000a74       0x8a dot_matrix.o
-                0x00000a74                dmPrintChar
+                0x00000a3e       0x8a dot_matrix.o
+                0x00000a3e                dmPrintChar
  .text.InitHardware
-                0x00000afe       0x42 Hacklace.o
-                0x00000afe                InitHardware
- .text.SetMode  0x00000b40       0x3c Hacklace.o
-                0x00000b40                SetMode
+                0x00000ac8       0x42 Hacklace.o
+                0x00000ac8                InitHardware
+ .text.SetMode  0x00000b0a       0x3c Hacklace.o
+                0x00000b0a                SetMode
  .text.DisplayMessage
-                0x00000b7c       0xe8 Hacklace.o
-                0x00000b7c                DisplayMessage
+                0x00000b46       0xe8 Hacklace.o
+                0x00000b46                DisplayMessage
  .text.GoToSleep
-                0x00000c64       0x5a Hacklace.o
-                0x00000c64                GoToSleep
+                0x00000c2e       0x5a Hacklace.o
+                0x00000c2e                GoToSleep
  .text.startup.main
-                0x00000cbe       0x58 Hacklace.o
-                0x00000cbe                main
+                0x00000c88       0x58 Hacklace.o
+                0x00000c88                main
  .text.__vector_13
-                0x00000d16       0x4c Hacklace.o
-                0x00000d16                __vector_13
+                0x00000ce0       0x4c Hacklace.o
+                0x00000ce0                __vector_13
  .text.__vector_14
-                0x00000d62       0xa8 Hacklace.o
-                0x00000d62                __vector_14
+                0x00000d2c       0xa8 Hacklace.o
+                0x00000d2c                __vector_14
  .text.__vector_20
-                0x00000e0a       0x14 Hacklace.o
-                0x00000e0a                __vector_20
+                0x00000dd4       0x14 Hacklace.o
+                0x00000dd4                __vector_20
  .text.__vector_7
-                0x00000e1e      0x1a6 Hacklace.o
-                0x00000e1e                __vector_7
+                0x00000de8      0x1a6 Hacklace.o
+                0x00000de8                __vector_7
  .text.avr-libc
-                0x00000fc4       0x10 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
-                0x00000fc4                __eerd_byte_tn4313
+                0x00000f8e       0x10 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
+                0x00000f8e                __eerd_byte_tn4313
  .text.avr-libc
-                0x00000fd4       0x1c c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
-                0x00000fd4                __eewr_byte_tn4313
-                0x00000fd6                __eewr_r18_tn4313
-                0x00000ff0                . = ALIGN (0x2)
+                0x00000f9e       0x1c c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
+                0x00000f9e                __eewr_byte_tn4313
+                0x00000fa0                __eewr_r18_tn4313
+                0x00000fba                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000ff0        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
-                0x00000ff0                _exit
-                0x00000ff0                exit
+ .fini9         0x00000fba        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+                0x00000fba                _exit
+                0x00000fba                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -428,21 +424,21 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000ff0        0x4 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .fini0         0x00000fba        0x4 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000ff4                _etext = .
+                0x00000fbe                _etext = .
 
-.data           0x00800060        0x8 load address 0x00000ff4
+.data           0x00800060        0x8 load address 0x00000fbe
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
- .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+ .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
  .data          0x00800060        0x0 dot_matrix.o
  .data          0x00800060        0x0 Hacklace.o
- .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
- .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
- .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
- .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
- .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
+ .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
+ .data          0x00800060        0x0 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
  *(.data*)
  .data.ee_write_ptr
                 0x00800060        0x2 Hacklace.o
@@ -454,7 +450,7 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
  .data.scroll_speed
                 0x00800065        0x1 Hacklace.o
                 0x00800065                scroll_speed
- .data.scroll_timer.1784
+ .data.scroll_timer.1783
                 0x00800066        0x1 Hacklace.o
  *(.rodata)
  *(.rodata*)
@@ -468,17 +464,17 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
                 0x00800068                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.pb_timer.1785
+ .bss.pb_timer.1784
                 0x00800068        0x1 Hacklace.o
- .bss.state.1797
+ .bss.state.1796
                 0x00800069        0x1 Hacklace.o
- .bss.val.1798  0x0080006a        0x1 Hacklace.o
+ .bss.val.1797  0x0080006a        0x1 Hacklace.o
  *(COMMON)
  COMMON         0x0080006b       0xce dot_matrix.o
                 0x0080006b                display
                 0x00800139                PROVIDE (__bss_end, .)
-                0x00000ff4                __data_load_start = LOADADDR (.data)
-                0x00000ffc                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000fbe                __data_load_start = LOADADDR (.data)
+                0x00000fc6                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800139        0x0
                 0x00800139                PROVIDE (__noinit_start, .)
@@ -512,15 +508,15 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
 
 .stab           0x00000000      0x840
  *(.stab)
- .stab          0x00000000      0x6cc c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
- .stab          0x000006cc       0x90 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
+ .stab          0x00000000      0x6cc c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+ .stab          0x000006cc       0x90 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eerd_byte_attiny4313.o)
                                  0x9c (size before relaxing)
- .stab          0x0000075c       0xe4 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
+ .stab          0x0000075c       0xe4 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a(eewr_byte_attiny4313.o)
                                  0xf0 (size before relaxing)
 
 .stabstr        0x00000000      0x181
  *(.stabstr)
- .stabstr       0x00000000      0x181 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
+ .stabstr       0x00000000      0x181 c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn4313.o
 
 .stab.excl
  *(.stab.excl)
@@ -562,10 +558,10 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1096
+.debug_info     0x00000000     0x1080
  *(.debug_info)
  .debug_info    0x00000000      0x559 dot_matrix.o
- .debug_info    0x00000559      0xb3d Hacklace.o
+ .debug_info    0x00000559      0xb27 Hacklace.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev   0x00000000      0x547
@@ -573,22 +569,22 @@ LOAD c:/programme/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolc
  .debug_abbrev  0x00000000      0x245 dot_matrix.o
  .debug_abbrev  0x00000245      0x302 Hacklace.o
 
-.debug_line     0x00000000      0x6a2
+.debug_line     0x00000000      0x69d
  *(.debug_line)
  .debug_line    0x00000000      0x1dc dot_matrix.o
- .debug_line    0x000001dc      0x4c6 Hacklace.o
+ .debug_line    0x000001dc      0x4c1 Hacklace.o
 
 .debug_frame    0x00000000      0x264
  *(.debug_frame)
  .debug_frame   0x00000000       0xa4 dot_matrix.o
  .debug_frame   0x000000a4      0x1c0 Hacklace.o
 
-.debug_str      0x00000000      0x3eb
+.debug_str      0x00000000      0x3d3
  *(.debug_str)
- .debug_str     0x00000000      0x1d6 dot_matrix.o
-                                0x215 (size before relaxing)
- .debug_str     0x000001d6      0x215 Hacklace.o
-                                0x368 (size before relaxing)
+ .debug_str     0x00000000      0x1c3 dot_matrix.o
+                                0x202 (size before relaxing)
+ .debug_str     0x000001c3      0x210 Hacklace.o
+                                0x350 (size before relaxing)
 
 .debug_loc      0x00000000      0xb30
  *(.debug_loc)
