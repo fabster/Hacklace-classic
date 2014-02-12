@@ -1,6 +1,5 @@
 $54,Hacklace ^P
-$44, nur 10^A$9D,
-$64, Kauf mich$7F !!!$9D,
+$64, Lötspaß für alle!$9D,
 $65, I ^R RaumZeitLabor$9D,
 $C4,$8B, $8C, $8E, $8D,
 $44, ^m + ^n = ^R
@@ -30,5 +29,4 @@ $6C,~R
 $0E,~S
 $7D,~T$9D,
 $0D,~U
-$94,~V
 $00,
