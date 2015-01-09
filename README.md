@@ -1,8 +1,6 @@
 Hacklace Firmware
 =================
 
-Visit http://www.hacklace.org for more information and build instructions.
-
 Building
 --------
 To build the project you can use AVR Studio 6 or the integrated Makefile.
